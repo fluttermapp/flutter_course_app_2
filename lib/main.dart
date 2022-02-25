@@ -10,8 +10,21 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Center(
-          child: Image.asset("images/welcome.png"),
+        backgroundColor: Colors.deepOrangeAccent,
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.coffee),
+                Text('WELCOME'),
+              ],
+            ),
+            Center(
+              child: Image.asset("images/welcome.png"),
+            ),
+          ],
         ),
       ),
     );
